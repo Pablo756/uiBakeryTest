@@ -1,0 +1,363 @@
+id: '16956347385180.8360122049038661'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 196
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 168
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{state.discoverData.results}}'
+  name: discoverTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Movies
+  showLoading:
+    withData: true
+    dataValue: '{{actions.getDiscover.loading}}'
+    value: false
+  sortDirection:
+    value: desc
+    dataValue: asc
+    withData: false
+  sortColumn:
+    value: results
+    dataValue: ''
+    withData: false
+  sortable:
+    value: false
+    dataValue: 'true'
+    withData: false
+  serverSidePagination: true
+  putEmptyValuesAtTheEnd: false
+  limit: '20'
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  disableRowSelection:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showReloadAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showAddAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  showBulkEditAction:
+    value: false
+    dataValue: 'false'
+    withData: false
+  resetActivePageOnNewData: true
+  totalRowCount: ''
+actions:
+  smartTablePageSelect:
+    - action: '16956372572620.8531727838318515'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  init: []
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
+index: 0
+slots:
+  - id: '16956347385180.40726926645834194'
+    name: columns
+    children:
+      - id: '16956386076840.3512892694911667'
+        definitionId: atomicNumber
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 0
+        slots: []
+      - id: '16956386076830.1543057139525188'
+        definitionId: atomicBoolean
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicBoolean
+          prop: adult
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 1
+        slots: []
+      - id: '16956386076830.36550033462095'
+        definitionId: atomicString
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString
+          prop: backdrop_path
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 2
+        slots: []
+      - id: '16956386076830.990418735712995'
+        definitionId: atomicJsonEditor
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicJsonEditor
+          prop: genre_ids
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 3
+        slots: []
+      - id: '16956386076840.5472341964302425'
+        definitionId: atomicString
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString2
+          prop: original_language
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 4
+        slots: []
+      - id: '16956386076840.4539222278650088'
+        definitionId: atomicText
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicText
+          prop: original_title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '60'
+          filter: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
+        index: 7
+        slots: []
+      - id: '16956386076840.16755459586979327'
+        definitionId: atomicText
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 13
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicText2
+          prop: overview
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+          lines: '5'
+        index: 8
+        slots: []
+      - id: '16956386076840.9901644753620129'
+        definitionId: atomicNumber
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 13
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber2
+          prop: popularity
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '50'
+          filter: true
+        index: 10
+        slots: []
+      - id: '16956386076840.8249345668740595'
+        definitionId: atomicDateTime
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 13
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicDateTime
+          prop: release_date
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        index: 9
+        slots: []
+      - id: '16956386076840.2164174465549027'
+        definitionId: atomicBoolean
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicBoolean2
+          prop: video
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 11
+        slots: []
+      - id: '16956386076840.6441376695128571'
+        definitionId: atomicNumber
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber3
+          prop: vote_average
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 12
+        slots: []
+      - id: '16956386076840.2959704214116008'
+        definitionId: atomicNumber
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber4
+          prop: vote_count
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 13
+        slots: []
+      - id: '16956386076840.6068954825211359'
+        definitionId: atomicImage
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicImage
+          prop: poster_path
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          width: '80'
+          mappedValue: https://image.tmdb.org/t/p/original/{{value}}
+          fullWidth: true
+        index: 5
+        slots: []
+      - id: '16956386076840.9837573411146578'
+        definitionId: atomicString
+        parentSlotId: '16956347385180.40726926645834194'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString3
+          prop: title
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: '70'
+          textStyle:
+            transform: none
+            styles:
+              - bold
+        index: 6
+        slots: []

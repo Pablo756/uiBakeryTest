@@ -1,0 +1,20 @@
+storeItemList:
+  - id: '16956393582480.25831357886906736'
+    name: discoverData
+    value: {}
+    valueType: object
+    initialValue: {}
+    version: 1
+metadata:
+  favicon: ''
+  code: ''
+  title: New app
+  description: ''
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions:
+    appLoad: []
+    appData: []
+  gridVersion: 2
+internalType: project
