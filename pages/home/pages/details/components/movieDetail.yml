@@ -1,0 +1,356 @@
+id: '16958270584520.09532607677760363'
+definitionId: detail
+parentSlotId: '16957113079920.6466945052947382'
+styles:
+  xl:
+    gridItem:
+      x: 4
+      y: 0
+      w: 8
+      h: 80
+  xs:
+    gridItem:
+      x: 0
+      y: 30
+      w: 24
+      h: 80
+properties:
+  dynamicFields:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  entity: '{{actions.getMovieDetails.data}}'
+  name: movieDetail
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Movie details
+actions: {}
+index: 0
+slots:
+  - id: '16958270584520.026283264968999243'
+    name: structure
+    children:
+      - id: '16958270586720.4516087886059217'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber5
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 0
+        slots: []
+      - id: '16958270586720.7319783385083805'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString4
+          prop: imdb_id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 1
+        slots: []
+      - id: '16958270586720.6655189987166541'
+        definitionId: atomicBoolean
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicBoolean3
+          prop: adult
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 2
+        slots: []
+      - id: '16958270586720.009930434159674872'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString5
+          prop: backdrop_path
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 3
+        slots: []
+      - id: '16958270586720.5763666906153653'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString6
+          prop: belongs_to_collection
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 4
+        slots: []
+      - id: '16958270586720.0763048541538669'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber6
+          prop: budget
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 11
+        slots: []
+      - id: '16958270586720.9807530022636932'
+        definitionId: atomicJsonEditor
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicJsonEditor2
+          prop: genres
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 5
+        slots: []
+      - id: '16958270586720.5639221038569633'
+        definitionId: atomicLink
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicLink
+          prop: homepage
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 13
+        slots: []
+      - id: '16958270586720.4481322440676907'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString7
+          prop: original_language
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 12
+        slots: []
+      - id: '16958270586730.47049292254172537'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString8
+          prop: original_title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 6
+        slots: []
+      - id: '16958270586730.26845458822850743'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText3
+          prop: overview
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 7
+        slots: []
+      - id: '16958270586730.27131110138716585'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber7
+          prop: popularity
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 9
+        slots: []
+      - id: '16958270586730.26202502979462916'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString9
+          prop: poster_path
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 14
+        slots: []
+      - id: '16958270586730.9902663211735403'
+        definitionId: atomicJsonEditor
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicJsonEditor3
+          prop: production_companies
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 15
+        slots: []
+      - id: '16958270586730.3578375452441931'
+        definitionId: atomicJsonEditor
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicJsonEditor4
+          prop: production_countries
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 16
+        slots: []
+      - id: '16958270586730.6840106290804555'
+        definitionId: atomicDateTime
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime2
+          prop: release_date
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 8
+        slots: []
+      - id: '16958270586730.04216957012893574'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber8
+          prop: revenue
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 17
+        slots: []
+      - id: '16958270586730.9083259465852762'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber9
+          prop: runtime
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 10
+        slots: []
+      - id: '16958270586730.2636550223633607'
+        definitionId: atomicJsonEditor
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicJsonEditor5
+          prop: spoken_languages
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 18
+        slots: []
+      - id: '16958270586730.5107921502505366'
+        definitionId: atomicSelect
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicSelect
+          prop: status
+          primaryKey: false
+          options:
+            value:
+              - value: Released
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16958270586730.8732524460570292'
+            dataValue: |-
+              [
+                {
+                  value: 'Released',
+                  color: 'primary'
+                }
+              ]
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16958270584520.026283264968999243'
+        index: 19
+        slots: []

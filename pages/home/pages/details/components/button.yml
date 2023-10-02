@@ -1,0 +1,34 @@
+id: '16958274608050.4110706663427328'
+definitionId: button
+parentSlotId: '16957113079920.6466945052947382'
+styles:
+  xs:
+    gridItem:
+      x: 0
+      y: 110
+      w: 24
+      h: 10
+  xl:
+    gridItem:
+      x: 0
+      y: 80
+      w: 12
+      h: 10
+    iconPlacement: left
+properties:
+  name: button
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Safe to favourites
+  status:
+    value: basic
+    dataValue: primary
+    withData: false
+  appearance:
+    value: outline
+    dataValue: filled
+    withData: false
+index: 2
+actions: {}
+slots: []
