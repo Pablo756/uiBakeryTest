@@ -1,0 +1,25 @@
+id: '16964222102680.709156183499108'
+definitionId: image
+styles:
+  xl:
+    src:
+      url: https://image.tmdb.org/t/p/original/{{item.poster_path}}
+      uploadUrl: ''
+      name: ''
+      active: url
+    radius:
+      customValue: 8
+      customUnit: px
+    gridItem:
+      x: 0
+      y: 0
+      w: 4
+      h: 18
+properties:
+  name: image2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16964222102680.25730709159531817'
+index: 0
+slots: []

@@ -1,0 +1,38 @@
+id: '16964198998120.4005629940421931'
+name: favourites
+url: favourites
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 2
+slots:
+  - id: '16964198998120.28500842261785264'
+    name: content
+    children:
+      - id: '16964198998120.6406309088738511'
+        definitionId: grid
+        parentSlotId: '16964198998120.28500842261785264'
+        styles: {}
+        properties:
+          name: favourites
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        actions:
+          pageLoad:
+            - action: '16964199264060.01843325234714155'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+            - action: '16964372283510.48214801363183835'
+              paramCode: ''
+              blockPageLoad: false
+              index: 1
+        slots:
+          - id: '16964198998130.25613155179969005'
+            name: content
+            children:
+              - components/button9.yml
+              - components/listView/listView.yml

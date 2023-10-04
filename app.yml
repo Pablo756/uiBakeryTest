@@ -34,6 +34,12 @@ storeItemList:
     initialValue: null
     version: 1
     parentPageId: '16957113079910.15644578538254694'
+  - id: '16964372761430.5803925803867516'
+    name: currentPage
+    value: home
+    valueType: string
+    initialValue: home
+    version: 1
 metadata:
   favicon: ''
   code: |-

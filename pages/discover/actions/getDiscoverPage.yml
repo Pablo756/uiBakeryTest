@@ -1,0 +1,98 @@
+id: '16956372572620.8531727838318515'
+name: getDiscoverPage
+nameConfigured: true
+steps:
+  - id: '16956372572620.7597484358456084'
+    type: httpRequest
+    name: getDiscoverMoviesPage
+    params:
+      - type: datasourceId
+        value: My Data
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: GET
+        valueType: string
+      - type: url
+        value: /3/discover/movie/?page={{ui.discoverTable.activePageIndex + 1}}&
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: sort_by
+            value: popularity.desc
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: raw
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16956392047090.4974893938626739'
+    type: putInStore
+    name: saveDiscoverData
+    params:
+      - type: name
+        value: '16956393582480.25831357886906736'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.getDiscover.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getDiscover.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getDiscover.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 1
