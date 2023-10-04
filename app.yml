@@ -5,9 +5,51 @@ storeItemList:
     valueType: object
     initialValue: {}
     version: 1
+    parentPageId: '1'
+  - id: '16963533495880.12788518456246312'
+    name: isDBId
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16963535384400.9052189809124702'
+    name: isDBRate
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16963535792980.8183451344433432'
+    name: isDBComment
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16964094594890.5652332619705127'
+    name: rate
+    value: null
+    valueType: number
+    initialValue: null
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16964372761430.5803925803867516'
+    name: currentPage
+    value: home
+    valueType: string
+    initialValue: home
+    version: 1
 metadata:
   favicon: ''
-  code: ''
+  code: |-
+    <style>
+      .detailCard movieDetail {
+        flex: 1;
+        width: 2000;
+        height: 1000;
+      }
+    </style>
   title: New app
   description: ''
 appSettings:

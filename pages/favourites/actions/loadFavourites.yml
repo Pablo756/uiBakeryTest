@@ -1,0 +1,104 @@
+id: '16964199264060.01843325234714155'
+name: loadFavourites
+nameConfigured: true
+steps:
+  - id: '16964219709040.8019565297952622'
+    type: LOAD_COLLECTION
+    name: newStep
+    params:
+      - type: datasourceId
+        value: Saved Movie DB
+        valueType: string
+      - type: resourceId
+        value: sheet
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: return {{data.map(item => item.id)}}
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16964358797580.7923105080006656'
+    type: loopAction
+    name: loop
+    params:
+      - type: action
+        value: '16964359705830.7675304467065922'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customArray
+        value: return {{data}};
+        valueType: interpolatedValue
+      - type: iterationChunkSize
+        value: '3'
+        valueType: custom
+      - type: iterationChunkDelay
+        value: '300'
+        valueType: custom
+      - type: maxIterations
+        value: ''
+        valueType: custom
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+      - type: executionMethod
+        value: sequential
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '16964198998120.4005629940421931'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadFavourites.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadFavourites.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadFavourites.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: false
+index: 14

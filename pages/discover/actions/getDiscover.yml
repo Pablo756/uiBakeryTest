@@ -19,12 +19,8 @@ steps:
         interpolationType: string
       - type: headers
         value:
-          - name: Accept
-            value: application/json
-          - name: Authorization
-            value: >-
-              Bearer
-              eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZTIwZWM3MWM5MmNiZmI4MGZkYzQxZTBiNjljZGU1ZCIsInN1YiI6IjY1MTEzNGY1M2E0YTEyMDBhZDlhN2E1MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.E35z3d1j61bypZnV9LV1mHmeFEw5fXKRMbUduPc5sO4
+          - name: ''
+            value: ''
         valueType: custom
         interpolationType: string
       - type: queryParams
@@ -96,7 +92,7 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
+assigned: true
 selected: true
 configured: true
 index: 0

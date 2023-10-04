@@ -1,0 +1,39 @@
+id: '16964222102680.31695636938221794'
+definitionId: card
+styles: {}
+properties:
+  name: card
+  showHeader: false
+  gridItem:
+    w: 24
+    h: 24
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16964222102680.7759039234738669'
+index: 0
+actions:
+  cardClick:
+    - action: '16964364554020.7921461300475854'
+      paramCode: |-
+        {
+          type: 'new',
+            id: item.id
+        }
+      blockPageLoad: false
+      index: 0
+  init: []
+slots:
+  - id: '16964222102680.745664687096296'
+    name: header
+    children:
+      - heading.yml
+  - id: '16964222102680.25730709159531817'
+    name: body
+    children:
+      - image2.yml
+      - heading2.yml
+      - heading3.yml
+  - id: '16964222102680.9570102513699443'
+    name: footer
+    children: []

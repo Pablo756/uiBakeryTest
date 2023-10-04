@@ -1,0 +1,60 @@
+id: '16958274608050.4110706663427328'
+definitionId: button
+parentSlotId: '16957113079920.6466945052947382'
+styles:
+  xs:
+    gridItem:
+      x: 0
+      y: 120
+      w: 24
+      h: 10
+  xl:
+    gridItem:
+      x: 0
+      y: 90
+      w: 12
+      h: 10
+    iconPlacement: left
+properties:
+  name: button
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Safe to favourites
+  status:
+    value: basic
+    dataValue: primary
+    withData: false
+  appearance:
+    value: outline
+    dataValue: filled
+    withData: false
+  icon:
+    value: star
+    dataValue: star-outline
+    withData: true
+  linkInfo:
+    active: internalPath
+    internalPath: ''
+    externalPath: ''
+  showLoading:
+    value: false
+    dataValue: 'false'
+    withData: true
+  __UIBAKERY__SHOW__CONDITION__PRESERVE__:
+    value: false
+    dataValue: 'false'
+    withData: false
+  cssClasses:
+    - ''
+    - ''
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{!state.isDBId}}'
+index: 2
+actions:
+  buttonClick:
+    - action: '16962352940260.622700532380712'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  init: []
+slots: []

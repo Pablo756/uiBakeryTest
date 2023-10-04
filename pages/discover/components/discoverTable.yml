@@ -5,13 +5,13 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 0
+      y: 10
       w: 24
-      h: 196
+      h: 178
   xs:
     gridItem:
       x: 0
-      y: 0
+      y: 10
       w: 24
       h: 168
 properties:
@@ -76,6 +76,7 @@ properties:
     withData: false
   resetActivePageOnNewData: true
   totalRowCount: ''
+  rowVariation: normal
 actions:
   smartTablePageSelect:
     - action: '16956372572620.8531727838318515'
@@ -88,7 +89,11 @@ actions:
   smartTableBulkEdit: []
   smartTableDelete: []
   smartTableRowSelect: []
-  smartTableRowClick: []
+  smartTableRowClick:
+    - action: '16956437159750.9907116404507055'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
   smartTableFilterChange: []
   smartTableSortChange: []
   smartTableReload: []
@@ -102,7 +107,7 @@ slots:
         parentSlotId: '16956347385180.40726926645834194'
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicNumber
           prop: id

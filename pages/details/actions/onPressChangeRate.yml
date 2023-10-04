@@ -1,0 +1,46 @@
+id: '16964163760900.18287734105026776'
+name: onPressChangeRate
+nameConfigured: true
+steps:
+  - id: '16964163949410.9398182357892473'
+    type: putInStore
+    name: setIsRate
+    params:
+      - type: name
+        value: '16963535384400.9052189809124702'
+        valueType: string
+      - type: value
+        value: 'false'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: false
+parentPageId: '16957113079910.15644578538254694'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.onPressChangeRate.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onPressChangeRate.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onPressChangeRate.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
+index: 11

@@ -1,0 +1,80 @@
+id: '16957114803420.9515104578814002'
+name: getMovieDetails
+nameConfigured: true
+steps:
+  - id: '16957114939440.03315554738573345'
+    type: httpRequest
+    name: getDetails
+    params:
+      - type: datasourceId
+        value: My Data
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: GET
+        valueType: string
+      - type: url
+        value: /3/movie/{{activeRoute.queryParams.id}}
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: raw
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '16957113079910.15644578538254694'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.getMovieDetails.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.getMovieDetails.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.getMovieDetails.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 4

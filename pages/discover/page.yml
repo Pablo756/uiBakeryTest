@@ -1,6 +1,8 @@
 id: '1'
-name: Home
-url: home
+name: discover
+url: discover
+roleIds: []
+disableInMenu: false
 index: 0
 slots:
   - id: '1'
@@ -19,10 +21,19 @@ slots:
             - xl
             - xs
         actions:
-          pageLoad: []
+          pageLoad:
+            - action: '16956336915920.9639861734236583'
+              paramCode: ''
+              blockPageLoad: true
+              index: 0
+            - action: '16964373990470.9395505149334757'
+              paramCode: ''
+              blockPageLoad: false
+              index: 1
         slots:
           - id: '2'
             name: content
             bindings: {}
             children:
               - components/discoverTable.yml
+              - components/button7.yml

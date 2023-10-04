@@ -1,0 +1,44 @@
+id: '16964372283510.48214801363183835'
+name: setCurrentPage2
+nameConfigured: true
+steps:
+  - id: '16964372472720.3115505412137638'
+    type: putInStore
+    name: newStep
+    params:
+      - type: name
+        value: '16964372761430.5803925803867516'
+        valueType: string
+      - type: value
+        value: '{{activeRoute.name}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: false
+parentPageId: '16964198998120.4005629940421931'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.setCurrentPage2.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.setCurrentPage2.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.setCurrentPage2.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true
+index: 17
