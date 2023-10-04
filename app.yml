@@ -6,6 +6,34 @@ storeItemList:
     initialValue: {}
     version: 1
     parentPageId: '1'
+  - id: '16963533495880.12788518456246312'
+    name: isDBId
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16963535384400.9052189809124702'
+    name: isDBRate
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16963535792980.8183451344433432'
+    name: isDBComment
+    value: false
+    valueType: boolean
+    initialValue: false
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
+  - id: '16964094594890.5652332619705127'
+    name: rate
+    value: null
+    valueType: number
+    initialValue: null
+    version: 1
+    parentPageId: '16957113079910.15644578538254694'
 metadata:
   favicon: ''
   code: |-

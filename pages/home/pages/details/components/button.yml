@@ -29,6 +29,32 @@ properties:
     value: outline
     dataValue: filled
     withData: false
+  icon:
+    value: star
+    dataValue: star-outline
+    withData: true
+  linkInfo:
+    active: internalPath
+    internalPath: ''
+    externalPath: ''
+  showLoading:
+    value: false
+    dataValue: 'false'
+    withData: true
+  __UIBAKERY__SHOW__CONDITION__PRESERVE__:
+    value: false
+    dataValue: 'false'
+    withData: false
+  cssClasses:
+    - ''
+    - ''
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{!state.isDBId}}'
 index: 2
-actions: {}
+actions:
+  buttonClick:
+    - action: '16962352940260.622700532380712'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  init: []
 slots: []

@@ -1,0 +1,117 @@
+id: '16963531759620.9242345617527978'
+name: loadDbById
+nameConfigured: true
+steps:
+  - id: '16963531759620.9046862853556412'
+    type: LOAD_ENTITY
+    name: loadDbById
+    params:
+      - type: datasourceId
+        value: Saved Movie DB
+        valueType: string
+      - type: resourceId
+        value: sheet
+        valueType: string
+      - type: filters
+        value:
+          - column: id
+            operation: '='
+            value:
+              value: '{{activeRoute.queryParams.id}}'
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16963533010880.39089760389559003'
+    type: putInStore
+    name: saveIsDBId
+    params:
+      - type: name
+        value: '16963533495880.12788518456246312'
+        valueType: string
+      - type: value
+        value: '{{!!data.id}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: false
+        valueType: custom
+    level: 1
+    fallthroughError: true
+    isChanged: true
+    nameConfigured: true
+  - id: '16963534886830.5288772517467404'
+    type: putInStore
+    name: saveIsDBRate
+    params:
+      - type: name
+        value: '16963535384400.9052189809124702'
+        valueType: string
+      - type: value
+        value: '{{!!data.rate}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: false
+        valueType: custom
+    level: 1
+    fallthroughError: true
+    isChanged: true
+    nameConfigured: true
+  - id: '16963535453140.8362230592232864'
+    type: putInStore
+    name: saveIsDBComment
+    params:
+      - type: name
+        value: '16963535792980.8183451344433432'
+        valueType: string
+      - type: value
+        value: '{{!!data.comment}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: false
+        valueType: custom
+    level: 1
+    fallthroughError: true
+    isChanged: true
+    nameConfigured: true
+singleStep: false
+mode: manual
+modeConfigured: true
+parentPageId: '16957113079910.15644578538254694'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.onSaveToFavorites.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onSaveToFavorites.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onSaveToFavorites.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 7

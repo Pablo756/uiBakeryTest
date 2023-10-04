@@ -24,9 +24,16 @@ slots:
         actions:
           pageLoad:
             - action: '16957114803420.9515104578814002'
-              paramCode: ''
+              paramCode: |-
+                {
+                  type: 'new'
+                }
               blockPageLoad: false
               index: 0
+            - action: '16963531759620.9242345617527978'
+              paramCode: ''
+              blockPageLoad: false
+              index: 1
         slots:
           - id: '16957113079920.6466945052947382'
             name: content
@@ -35,3 +42,14 @@ slots:
               - components/movieDetail.yml
               - components/image.yml
               - components/button.yml
+              - components/button2.yml
+              - components/input.yml
+              - components/button3.yml
+              - components/text.yml
+              - components/text2.yml
+              - components/button4.yml
+              - components/input2.yml
+              - components/button5.yml
+              - components/button6.yml
+              - components/text3.yml
+              - components/text4.yml

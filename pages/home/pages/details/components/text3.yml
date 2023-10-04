@@ -1,0 +1,33 @@
+id: '16964183016870.21262823293225552'
+definitionId: text
+parentSlotId: '16957113079920.6466945052947382'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 190
+      w: 7
+      h: 27
+  xs:
+    gridItem:
+      x: 0
+      y: 222
+      w: 24
+      h: 20
+properties:
+  name: text3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  heightMode: fixed
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{state.isDBComment}}'
+  value: '{{actions.loadDbById.data.comment}}'
+  overflowType:
+    value: scroll
+    dataValue: none
+    withData: false
+  showCopyButton: false
+  markdownSupport: true
+actions: {}
+index: 12
+slots: []
